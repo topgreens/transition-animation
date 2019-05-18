@@ -37,14 +37,27 @@ ul > li {
     transition-duration: 2s;
 }
 ul > li:hover {
-    background-color: yellow;
+    background-color: rgb(110, 110, 19);
 }
 
 
 .ov-hidden {
     overflow: hidden;
+    border: 1px solid #cccccc;
+    padding: 3px;
+    filter: saturate(180%);
+   
 }
 
+ .ov-hidden :hover{
+      transition: transform .5s;
+      filter:  saturate(180%);
+      transform: scale(1.5);
+      -webkit-transition: transform .5s;
+      -moz-transition: transform .5s;
+      -ms-transition: transform .5s;
+      -o-transition: transform .5s;
+}
 .main-container {
     max-width: 1280px;
     margin: auto;
