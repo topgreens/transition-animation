@@ -71,8 +71,15 @@ ul > li:hover {
     cursor: pointer;
 }
 
-.more-info {
-    visibility: show;
+.show-more-info:hover .more-info {
+    visibility: visible;
     opacity: 1;
+}
+
+
+.more-info {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 2s;
 }
 
